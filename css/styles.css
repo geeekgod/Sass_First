@@ -35,7 +35,10 @@ li {
     text-decoration: none;
     padding: 16px;
     display: block;
-    text-align: center; }
+    text-align: center;
+    transition: ease-in-out 0.4s; }
+    #main-nav a:hover {
+      background: #333; }
 
 section h1 {
   font-size: 24px;

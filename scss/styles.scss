@@ -19,6 +19,10 @@
     padding: 16px;
     display: block;
     text-align: center;
+    transition: ease-in-out 0.4s;
+    &:hover {
+      background: #333;
+    }
   }
 }
 
