@@ -1,14 +1,75 @@
 // Variables In Sass
 $deepBlue: #032f3e;
+$offWhite: #f8f9fb;
 $sectionHeading: 24px;
+$bannerHeading: 46px;
 
-#main-nav {
-  background: $deepBlue;
+// Mixins styles
+@mixin banner {
+  width: 100%;
+  position: relative;
+  color: #fff;
+  .banner-content {
+    position: absolute;
+    top: 50px;
+    width: 100%;
+  }
+  img {
+    width: 100%;
+  }
+  span {
+    font-size: $bannerHeading;
+    display: block;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+  span.title {
+    font-weight: normal;
+    margin-bottom: 30px;
+  }
 }
 
+// Main Nav Styles
+#main-nav {
+  background: $deepBlue;
+  ul {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  li {
+    flex: 1;
+  }
+  a {
+    color: $offWhite;
+    text-decoration: none;
+    padding: 16px;
+    display: block;
+    text-align: center;
+  }
+}
+
+// Section heading Styles
 section {
   h1 {
     font-size: $sectionHeading;
     color: $deepBlue;
+  }
+}
+
+// lead Banner
+.lead-banner {
+  @include banner;
+  text-align: right;
+}
+
+// Lessons Banner
+.lessons-banner {
+  @include banner;
+  li {
+    text-transform: uppercase;
+    font-size: 20px;
+    max-width: 500px;
+    margin: 60px 0;
   }
 }
