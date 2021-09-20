@@ -25,7 +25,7 @@
     text-align: center;
     transition: ease-in-out 0.4s;
     &:hover {
-      background: #333;
+      background: lighten($color: $deepBlue, $amount: 6);
     }
   }
 }
@@ -47,7 +47,7 @@
     color: $deepBlue;
     font-weight: bold;
     &:hover {
-      color: red;
+      color: complement($deepBlue);
     }
   }
   @include clearFix;

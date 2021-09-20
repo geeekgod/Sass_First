@@ -42,7 +42,7 @@ li {
     text-align: center;
     transition: ease-in-out 0.4s; }
     #main-nav a:hover {
-      background: #333; }
+      background: #04455b; }
 
 #services {
   margin-bottom: 60px; }
@@ -59,7 +59,7 @@ li {
     color: #032f3e;
     font-weight: bold; }
     #services a:hover {
-      color: red; }
+      color: #3e1203; }
   #services:after {
     content: "";
     display: block;
