@@ -30,6 +30,30 @@
   }
 }
 
+// Services Section Styling
+#services {
+  li {
+    float: left;
+    width: 33.33%;
+    box-sizing: border-box;
+    text-align: center;
+  }
+  img {
+    width: 60%;
+    margin: 20px 20%;
+  }
+  a {
+    text-decoration: none;
+    color: $deepBlue;
+    font-weight: bold;
+    &:hover {
+      color: red;
+    }
+  }
+  @include clearFix;
+  margin-bottom: 60px;
+}
+
 // Section heading Styles
 section {
   h1 {
@@ -57,8 +81,6 @@ section {
 
 // Projects Section Styling
 #projects li {
-  // width: 23%;
-  // margin: 1%;
   @include grid(4, 2%);
   img {
     width: 100%;

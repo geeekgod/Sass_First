@@ -23,6 +23,15 @@
   }
 }
 
+// Mixins for clearing float
+@mixin clearFix {
+  &:after {
+    content: "";
+    display: block;
+    clear: both;
+  }
+}
+
 // Mixin For Custom Grid
 @mixin grid($cols, $mrgn) {
   float: left;

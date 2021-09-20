@@ -44,6 +44,27 @@ li {
     #main-nav a:hover {
       background: #333; }
 
+#services {
+  margin-bottom: 60px; }
+  #services li {
+    float: left;
+    width: 33.33%;
+    box-sizing: border-box;
+    text-align: center; }
+  #services img {
+    width: 60%;
+    margin: 20px 20%; }
+  #services a {
+    text-decoration: none;
+    color: #032f3e;
+    font-weight: bold; }
+    #services a:hover {
+      color: red; }
+  #services:after {
+    content: "";
+    display: block;
+    clear: both; }
+
 section h1 {
   font-size: 24px;
   color: #032f3e; }
