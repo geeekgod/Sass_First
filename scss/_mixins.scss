@@ -16,10 +16,17 @@
     display: block;
     text-transform: uppercase;
     font-weight: bold;
+    @include mediaQuery(3000px, 1200px) {
+      font-size: 68px;
+    }
   }
   span.title {
     font-weight: normal;
     margin-bottom: 30px;
+  }
+  @include mediaQuery(1200px) {
+    max-height: 640px;
+    overflow: hidden;
   }
 }
 
@@ -44,8 +51,16 @@
 }
 
 // Mixin for Media Query
-@mixin mediaQuery($arg) {
-  @media screen and (max-width: $arg) {
-    @content;
+@mixin mediaQuery($arg...) {
+  @if length($arg) == 1 {
+    @media screen and (max-width: nth($arg, 1 )) {
+      @content;
+    }
+  }
+
+  @if length($arg) == 2 {
+    @media screen and (max-width: nth($arg, 1 )) and (min-width: nth($arg, 2 )) {
+      @content;
+    }
   }
 }

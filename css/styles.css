@@ -95,9 +95,16 @@ section h1 {
     display: block;
     text-transform: uppercase;
     font-weight: bold; }
+    @media screen and (max-width: 3000px) and (min-width: 1200px) {
+      .lead-banner span {
+        font-size: 68px; } }
   .lead-banner span.title {
     font-weight: normal;
     margin-bottom: 30px; }
+  @media screen and (max-width: 1200px) {
+    .lead-banner {
+      max-height: 640px;
+      overflow: hidden; } }
 
 .lessons-banner {
   width: 100%;
@@ -114,9 +121,16 @@ section h1 {
     display: block;
     text-transform: uppercase;
     font-weight: bold; }
+    @media screen and (max-width: 3000px) and (min-width: 1200px) {
+      .lessons-banner span {
+        font-size: 68px; } }
   .lessons-banner span.title {
     font-weight: normal;
     margin-bottom: 30px; }
+  @media screen and (max-width: 1200px) {
+    .lessons-banner {
+      max-height: 640px;
+      overflow: hidden; } }
   .lessons-banner li {
     text-transform: uppercase;
     font-size: 20px;
