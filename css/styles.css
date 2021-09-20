@@ -23,7 +23,11 @@ li {
   box-sizing: border-box; }
 
 #main-nav {
-  background: #032f3e; }
+  background: #032f3e;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  height: 100%; }
   #main-nav ul {
     width: 100%;
     display: flex;
