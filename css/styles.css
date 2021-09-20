@@ -92,13 +92,13 @@ section h1 {
     max-width: 500px;
     margin: 60px 0; }
 
-#projects ul {
-  display: flex;
-  flex-wrap: wrap; }
-
 #projects li {
-  width: 23%;
-  margin: 1%; }
+  float: left;
+  margin-right: 2%;
+  margin-bottom: 2%;
+  width: 23.5%; }
+  #projects li:nth-child(4n) {
+    margin-right: 0; }
   #projects li img {
     width: 100%; }
 

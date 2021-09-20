@@ -55,14 +55,11 @@ section {
   }
 }
 
-// Projects Section
-#projects ul {
-  display: flex;
-  flex-wrap: wrap;
-}
+// Projects Section Styling
 #projects li {
-  width: 23%;
-  margin: 1%;
+  // width: 23%;
+  // margin: 1%;
+  @include grid(4, 2%);
   img {
     width: 100%;
   }
