@@ -11,11 +11,13 @@
   height: 100%;
   ul {
     width: 100%;
-    display: flex;
-    flex-wrap: wrap;
+    @include clearFix;
   }
   li {
-    flex: 1;
+    @include grid(6, 0%);
+    @include mediaQuery(600px) {
+      width: 100%;
+    }
   }
   a {
     color: $offWhite;

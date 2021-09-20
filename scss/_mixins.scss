@@ -42,3 +42,10 @@
     margin-right: 0;
   }
 }
+
+// Mixin for Media Query
+@mixin mediaQuery($arg) {
+  @media screen and (max-width: $arg) {
+    @content;
+  }
+}
