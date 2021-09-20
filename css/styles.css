@@ -76,8 +76,10 @@ li {
     clear: both; }
 
 section h1 {
-  font-size: 24px;
-  color: #032f3e; }
+  font-size: 34px;
+  color: #032f3e;
+  text-align: center;
+  padding: 1rem 0; }
 
 .lead-banner {
   width: 100%;
