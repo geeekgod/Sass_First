@@ -92,4 +92,14 @@ section h1 {
     max-width: 500px;
     margin: 60px 0; }
 
+#projects ul {
+  display: flex;
+  flex-wrap: wrap; }
+
+#projects li {
+  width: 23%;
+  margin: 1%; }
+  #projects li img {
+    width: 100%; }
+
 /*# sourceMappingURL=styles.css.map */

@@ -54,3 +54,16 @@ section {
     margin: 60px 0;
   }
 }
+
+// Projects Section
+#projects ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+#projects li {
+  width: 23%;
+  margin: 1%;
+  img {
+    width: 100%;
+  }
+}
